@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This repo is used to test compiling a docker image with Google's Stackdriver gem.
 
-Things you may want to cover:
+Steps to replicate / steps I used:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. `rails new google-ruby-test`
+2. Added the docker file, docker ignore, entrypoint.sh, and added the `stackdriver` gem
+3. Bulid the image with `docker build -f web.dockerfile -t google-ruby-test .`
